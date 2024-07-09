@@ -2,13 +2,13 @@
 
 MongoDB is a NoSQL database that provides high performance, high availability, and easy scalability. It stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time. This makes MongoDB an ideal solution for projects requiring flexibility and fast iterative development.
 
-**Core Concepts:**
+## Core Concepts
 
 - **Database:** A container for collections.
 - **Collection:** A group of MongoDB documents.
 - **Document:** A set of key-value pairs. MongoDB documents are similar to JSON objects.
 
-**Advantages of MongoDB:**
+## Advantages of MongoDB
 
 - **Flexible Schema:** MongoDB allows you to create documents without having to define the structure of the document beforehand.
 - **Scalability:** Horizontal scaling using sharding, distributing data across multiple machines.
@@ -39,7 +39,7 @@ Below are some of the best practices that can be followed while working with Mon
 }
 ```
 
-## Indexing
+### Indexing
 
 **Use Indexes Wisely:**
 
@@ -52,7 +52,7 @@ Below are some of the best practices that can be followed while working with Mon
 db.collection.createIndex({ "field": 1 });
 ```
 
-## Aggregation
+### Aggregation
 
 **Leverage Aggregation Framework:**
 
@@ -67,21 +67,21 @@ db.orders.aggregate([
 ]);
 ```
 
-## Data Consistency
+### Data Consistency
 
 **Replica Sets:**
 
 - Use replica sets for high availability and automatic failover.
 - Ensure at least one secondary node is available to handle read operations if needed.
 
-## Sharding
+### Sharding
 
 **Partition Data with Sharding:**
 
 - Distribute data across multiple servers for horizontal scalability.
 - Choose an appropriate shard key based on query patterns and data distribution.
 
-## Backup and Restore
+### Backup and Restore
 
 **Regular Backups:**
 
@@ -100,7 +100,7 @@ db.orders.aggregate([
 - Use encryption for data in transit (TLS/SSL) and data at rest.
 - Restrict network access to your MongoDB instances using firewalls and VPCs.
 
-## Monitoring and Performance Tuning
+### Monitoring and Performance Tuning
 
 **Monitor Performance:**
 
